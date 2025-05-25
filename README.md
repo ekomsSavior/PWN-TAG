@@ -2,13 +2,16 @@
 "tag to pwn" NFC tag exploit
 
 things you need: 
-nfc tag stickers>
+nfc tag stickers about $10 for 25 >
 https://a.co/d/gl2XRV8
 
 nfc tag writer app:
-something similar to this one
+something similar to this one works and 
+the free edition works too
 
 https://apps.apple.com/app/id1252962749
+
+lastly you need a debian based linux distro
 
 
 
