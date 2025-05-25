@@ -24,7 +24,7 @@ python3 -m http.server 8080
 ```
 Leave it running — this hosts your payloads.
 
-##2️Start ngrok in Terminal 2
+## Start ngrok in Terminal 2
 
 Open a new terminal tab or split window, then run:
 
