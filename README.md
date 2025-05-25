@@ -64,8 +64,8 @@ open nfc writer app
 
 -write
 
----
 now just place your phone near the tag and boom we are in
+---
 ---
 ## H^3 hope all is well homies
 
