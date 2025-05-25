@@ -1,6 +1,15 @@
 # PWN-TAG
 "tag to pwn" NFC tag exploit
 
+things you need: 
+nfc tag stickers>
+https://a.co/d/gl2XRV8
+
+nfc tag writer app:
+something similar to this one
+
+https://apps.apple.com/app/id1252962749
+
 
 
 ##Start HTTP Server in Terminal 1
