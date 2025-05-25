@@ -1,0 +1,1 @@
+echo "This is your payload dropper." > payloads/spy.apk

