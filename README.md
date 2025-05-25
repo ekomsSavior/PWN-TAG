@@ -2,7 +2,9 @@
 "tag to pwn" NFC tag exploit
 
 things you need: 
+
 nfc tag stickers about $10 for 25 >
+
 https://a.co/d/gl2XRV8
 
 nfc tag writer app:
