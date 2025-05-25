@@ -63,6 +63,7 @@ open nfc writer app
 -place ngrok link "https://f6xd-3301-602...ngrok-free.app/payloads/test_shell.html"
 
 -write
+
 ---
 now just place your phone near the tag and boom we are in
 ---
