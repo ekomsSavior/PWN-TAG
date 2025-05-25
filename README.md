@@ -49,19 +49,24 @@ Replace with your real ngrok link
 ```bash
 python3 listener.py
 ```
+
 ## imbed NFC tag with url:
 
 open nfc writer app
 
 -choose write
+
 -add record
+
 -choose url
+
 -place ngrok link "https://f6xd-3301-602...ngrok-free.app/payloads/test_shell.html"
+
 -write
 
-now just place your phone near the tag and boom we are in
+##now just place your phone near the tag and boom we are in
 
-H^3 hope all is well homies
+##H^3 hope all is well homies
 
 
 
