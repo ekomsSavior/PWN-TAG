@@ -28,7 +28,7 @@ git checkout ngrok-pro
 *  NFC writer app (free):
   [https://apps.apple.com/app/id1252962749](https://apps.apple.com/app/id1252962749)
 
-*  A Debian-based Linux system (Kali, Parrot, Ubuntu, etc.)
+*  A Debian-based Linux system 
 
 *  A [ngrok](https://ngrok.com/) account (free or paid)
 
