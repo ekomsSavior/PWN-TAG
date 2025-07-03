@@ -83,10 +83,10 @@ This serves your payloads at `http://localhost:8080`
 
 ---
 
-### Terminal 2 — Start ngrok Tunnel
+### Terminal 2 — Start ngrok Tunnel/this bash only works for paid ngrok accounts.
 
 ```bash
-ngrok http 8080
+ngrok http --domain=pwn-tag.ngrok.app 8080
 ```
 
 Copy the `https://...ngrok.app` URL — this becomes your **NFC tag link**.
