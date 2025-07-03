@@ -17,6 +17,13 @@ PWN-TAG lets you write NFC tags that trigger live payloads on mobile devices —
 
 *  A [ngrok](https://ngrok.com/) account (free or paid)
 
+## Branches
+
+| Branch         | Purpose                                                                 |
+|----------------|-------------------------------------------------------------------------|
+| `main`         | Free-tier version using randomized ngrok URLs (requires tap + confirm) |
+| `ngrok-pro`    | Paid ngrok version with static subdomains → enables **zero-click** payloads |
+
 
 ---
 
