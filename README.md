@@ -1,11 +1,14 @@
 # PWN-TAG  OG this version works best for non paid ngrok accounts
+---
 
-there are 2 branches in this repository:
+# There are 2 branches in this repository:
 
 -the main branch is for no zero click payload 
 delivery due to no paid ngrok accout.
 
 and the pwn_tag_pro branch allows for android zero click payload drlivery with paid ngrok account. 
+
+MAKE SURE YOU ARE IN THE RIGHT BRANCH OF THE REPOSITORY BEFORE PROCEEDING. toggle to switch branches found above. 
 
 ---
 PWN TAG _"tag to pwn"_ — NFC payload delivery system for social engineering, red team ops, and mobile testing.
