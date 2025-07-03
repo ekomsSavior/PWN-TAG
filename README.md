@@ -15,9 +15,13 @@ PWN-TAG lets you write NFC tags that trigger live payloads on mobile devices —
 Switch branches like this:
 
 ```bash
-git checkout ngrok-pro
+git checkout pwn_tag_pro
 ````
+or for non paid 
 
+```bash
+git checkout main
+````
 ---
 
 ##  What You Need
