@@ -1,4 +1,4 @@
-# PWN-TAG  PRO
+# PWN-TAG  PRO \ use with paid ngrok accounts
 _"tag to pwn"_ — NFC payload delivery system for social engineering, red team ops, and mobile testing.
 
 PWN-TAG lets you write NFC tags that trigger live payloads on mobile devices — from fingerprinting to botnet enrollment. Built for ethical hackers, educators, defenders, and curious minds.
