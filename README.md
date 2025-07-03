@@ -5,6 +5,13 @@ things you need:
 
 nfc tag stickers about $10 for 25 >
 
+## Branches
+
+| Branch Name      | Purpose                        |
+|------------------|--------------------------------|
+| `main`           | Free-tier version (no ngrok subdomain) |
+| `ngrok-pro`      | For users with a paid ngrok plan – allows zero-click payloads |
+
 https://a.co/d/gl2XRV8
 
 nfc tag writer app:
