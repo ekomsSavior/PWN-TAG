@@ -51,7 +51,7 @@ git checkout main
 ```bash
 sudo apt update
 sudo apt install python3 python3-pip -y
-pip3 install flask
+pip3 install flask --break-system-packages
 ```
 
 ## ngrok Setup
