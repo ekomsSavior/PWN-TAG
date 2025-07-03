@@ -42,8 +42,10 @@ cd PWN-TAG
 ```
 
 # (Optional) Switch to pro version for static subdomain support
-git checkout ngrok-pro
 
+```bash
+git checkout ngrok-pro
+```
 # Install Python dependencies
 
 ```bash
@@ -51,6 +53,21 @@ sudo apt update
 sudo apt install python3 python3-pip -y
 pip3 install flask
 ```
+
+## ngrok Setup
+
+```bash
+wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
+tar -xvzf ngrok-v3-stable-linux-amd64.tgz
+sudo mv ngrok /usr/local/bin/
+```
+
+Then authenticate your token: [https://ngrok.com/](https://ngrok.com/)
+
+```bash
+ngrok config add-authtoken <YOUR_NGROK_AUTH_TOKEN>
+```
+
 
 ---
 
