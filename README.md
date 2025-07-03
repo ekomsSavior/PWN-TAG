@@ -5,25 +5,6 @@ PWN-TAG lets you write NFC tags that trigger live payloads on mobile devices —
 
 ---
 
-## Branches
-
-| Branch         | Purpose                                                                 |
-|----------------|-------------------------------------------------------------------------|
-| `main`         | Free-tier version using randomized ngrok URLs (requires tap + confirm) |
-| `ngrok-pro`    | Paid ngrok version with static subdomains → enables **zero-click** payloads |
-
-Switch branches like this:
-
-```bash
-git checkout pwn_tag_pro
-````
-or for non paid 
-
-```bash
-git checkout main
-````
----
-
 ##  What You Need
 
 *  NFC tag stickers (\~\$10 for 25):
@@ -36,6 +17,7 @@ git checkout main
 
 *  A [ngrok](https://ngrok.com/) account (free or paid)
 
+
 ---
 
 ##  Installation (Clone + Setup)
@@ -45,11 +27,18 @@ git clone https://github.com/ekomsSavior/PWN-TAG.git
 cd PWN-TAG
 ```
 
-# (Optional) Switch to pro version for static subdomain support
+# (Optional) Switch to pro version for static subdomain support thru paid ngrok acct
 
 ```bash
-git checkout ngrok-pro
+git checkout pwn_tag_pro
 ```
+
+for free ngrok account use main branch:
+
+```bash
+git checkout main
+```
+
 # Install Python dependencies
 
 ```bash
