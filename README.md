@@ -167,17 +167,3 @@ window.location.href = "https://pwn-tag.ngrok.app/payloads/spy.apk";
 This tool is intended for **educational use, red team simulation, and defense research only.**
 Do not deploy it against real targets without consent. You are responsible for your actions.
 
----
-
-##  Extras Coming Soon
-
-*  `setup_repo.sh` for auto-deployment
-*  `payloads/README.md` to explain demo files
-*  BEEF hook setup help
-*  QR payload variants for phones without NFC
-
----
-
-Tag smart.
-Pwn hard.
-— ek0ms
