@@ -16,7 +16,7 @@ PWN-TAG lets you write NFC tags that trigger live payloads on mobile devices —
   https://apps.apple.com/app/id1252962749
 
 *  Debian-based Linux system
-*  
+  
 *  [ngrok account](https://ngrok.com/) with paid plan (static subdomain required)
 
 ---
