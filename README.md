@@ -50,7 +50,7 @@ cd PWN-TAG
 Switch to the pro branch:
 
 ```bash
-git checkout ngrok-pro
+git checkout pwn_tag_pro
 ```
 
 Install Python dependencies:
